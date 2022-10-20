@@ -1,5 +1,4 @@
-#content {
-    display: flex;
-    align-items: center;
-    text-align: center;
+.content-body {
+    padding: 20px;
+    top: 100px;
 }
