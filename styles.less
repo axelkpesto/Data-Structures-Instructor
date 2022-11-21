@@ -1,0 +1,26 @@
+.arrow(@direction, @size, @pos, @border, @bcgc) {
+    border: @border @bcgc;
+    border-radius: ((@border/3)*1px);
+    border-right: @pos;
+    border-top:@pos;
+    position:absolute;
+    pointer-events: visible;
+    transform: rotate((@direction + 135)* 1deg);
+    transform-origin: center;
+    height:@size;
+    width:@size;
+}
+
+.up-arrow {
+    .arrow(0,1em,20px,3px,solid rgba(0, 0, 0, 0.50));
+}
+
+.bottom-corner {
+    bottom:20;
+    left:20;
+}
+
+.content-body {
+    padding-top: 20px;
+}
+
