@@ -1,26 +1,39 @@
+// lessc styles.less styles.css
 .arrow(@direction, @size, @pos, @border, @bcgc) {
     border: @border @bcgc;
     border-radius: ((@border/3)*1px);
     border-right: @pos;
     border-top:@pos;
-    position:absolute;
     pointer-events: visible;
     transform: rotate((@direction + 135)* 1deg);
     transform-origin: center;
     height:@size;
     width:@size;
+    position:fixed;
 }
 
 .up-arrow {
     .arrow(0,1em,20px,3px,solid rgba(0, 0, 0, 0.50));
 }
 
+.down-arrow {
+    .arrow(180,1em,20px,3px,solid rgba(0, 0, 0, 0.50));
+}
+
+.left-arrow {
+    .arrow(270,1em,20px,3px,solid rgba(0, 0, 0, 0.50));
+}
+
+.right-arrow {
+    .arrow(90,1em,20px,3px,solid rgba(0, 0, 0, 0.50));
+}
+
 .bottom-corner {
-    bottom:20;
-    left:20;
+    float:right;
+    bottom:20px;
+    right:20px;
 }
 
 .content-body {
     padding-top: 20px;
 }
-

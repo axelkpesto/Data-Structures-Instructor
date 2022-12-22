@@ -1,26 +1,61 @@
 .up-arrow {
-  border: 3px solid black;
+  border: 3px solid rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   border-right: 20px;
   border-top: 20px;
-  position: absolute;
   pointer-events: visible;
   transform: rotate(135deg);
   transform-origin: center;
   height: 1em;
   width: 1em;
+  position: fixed;
+}
+
+.down-arrow {
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 1px;
+  border-right: 20px;
+  border-top: 20px;
+  pointer-events: visible;
+  transform: rotate(315deg);
+  transform-origin: center;
+  height: 1em;
+  width: 1em;
+  position: fixed;
+}
+
+.left-arrow {
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 1px;
+  border-right: 20px;
+  border-top: 20px;
+  pointer-events: visible;
+  transform: rotate(405deg);
+  transform-origin: center;
+  height: 1em;
+  width: 1em;
+  position: fixed;
+}
+
+.right-arrow {
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 1px;
+  border-right: 20px;
+  border-top: 20px;
+  pointer-events: visible;
+  transform: rotate(225deg);
+  transform-origin: center;
+  height: 1em;
+  width: 1em;
+  position: fixed;
 }
 
 .bottom-corner {
-  position:absolute;
+  float: right;
   bottom: 20px;
-  right:20px;
+  right: 20px;
 }
 
 .content-body {
   padding-top: 20px;
-}
-
-.bottom {
-  background-color: blue;
 }

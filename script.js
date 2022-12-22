@@ -11,7 +11,7 @@ function scrollStatus() {
 function sendToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-  console.log("sent to top")
+  console.log("sent to top");
 }
 
 document.addEventListener('DOMContentLoaded', () => {
